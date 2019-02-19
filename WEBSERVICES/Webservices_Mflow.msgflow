@@ -16,7 +16,7 @@
       <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="511,54" queueName="OUT">
         <translation xmi:type="utility:ConstantString" string="MQ Output"/>
       </nodes>
-      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="224,97" computeExpression="esql://routine/#Webservices_Mflow_Compute.Main" computeMode="destination">
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="243,22" computeExpression="esql://routine/#Webservices_Mflow_Compute.Main" computeMode="destination">
         <translation xmi:type="utility:ConstantString" string="Compute"/>
       </nodes>
       <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="130,206" URLSpecifier="/raj" messageDomainProperty="XMLNSC">
