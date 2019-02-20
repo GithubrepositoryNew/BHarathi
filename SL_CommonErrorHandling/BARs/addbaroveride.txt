@@ -1,0 +1,1 @@
+SL_CommonErrorHandling.CommonErrorHandling#CommonErrorHandling_FileOutput.outputDirectory = /applogs/dev2-iib10/exceptions
