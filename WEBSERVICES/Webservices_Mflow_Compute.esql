@@ -5,7 +5,7 @@ CREATE COMPUTE MODULE Webservices_Mflow_Compute
 	CREATE FUNCTION Main() RETURNS BOOLEAN
 	BEGIN
 		 CALL CopyMessageHeaders();
-		-- CALL CopyEntireMessage();
+		--CALL CopyEntireMessage();
 		DECLARE CC CHARACTER;
 		--SET CC = DD;
 		IF InputRoot.XMLNSC.EMP.Details.Ename = 'Rajeev' THEN
