@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dfdl="http://www.ogf.org/dfdl/dfdl-1.0/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:ibmDfdlExtn="http://www.ibm.com/dfdl/extensions" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:recSepFieldsFmt="http://www.ibm.com/dfdl/RecordSeparatedFieldFormat">
+    <xsd:import namespace="http://www.ibm.com/dfdl/RecordSeparatedFieldFormat" schemaLocation="IBMdefined/RecordSeparatedFieldFormat.xsd"/>
+    <xsd:annotation>
+		<xsd:appinfo source="http://www.ogf.org/dfdl/">
+			<dfdl:format encoding="{$dfdl:encoding}" escapeSchemeRef="" occursCountKind="implicit" outputNewLine="{}" ref="recSepFieldsFmt:RecordSeparatedFieldsFormat"/>
+		</xsd:appinfo>
+	</xsd:annotation>
+
+	<xsd:element dfdl:outputNewLine="{}" ibmSchExtn:docRoot="true" name="ELINK">
+		<xsd:complexType>
+			<xsd:sequence dfdl:outputNewLine="{}" dfdl:separator="" dfdl:separatorSuppressionPolicy="anyEmpty">
+				<xsd:element dfdl:ignoreCase="no" dfdl:initiator="" dfdl:outputNewLine="{}" maxOccurs="unbounded" name="ELINK_SEQ">
+					<xsd:complexType>
+						<xsd:sequence dfdl:initiatedContent="yes" dfdl:outputNewLine="{}" dfdl:separator="%#38;" dfdl:separatorSuppressionPolicy="anyEmpty" dfdl:sequenceKind="unordered">
+							<xsd:element dfdl:ignoreCase="yes" dfdl:initiator="txtServer=" dfdl:occursCountKind="parsed" ibmDfdlExtn:sampleValue="body_value1" minOccurs="0" name="txtServer" type="xsd:string"/>
+							<xsd:element dfdl:ignoreCase="yes" dfdl:initiator="txtUID=" dfdl:occursCountKind="parsed" ibmDfdlExtn:sampleValue="body_value2" minOccurs="0" name="txtUID" type="xsd:string"/>
+							<xsd:element dfdl:ignoreCase="yes" dfdl:initiator="txtPWD=" dfdl:occursCountKind="parsed" ibmDfdlExtn:sampleValue="body_value3" minOccurs="0" name="txtPWD" type="xsd:string"/>
+                            						<xsd:element dfdl:ignoreCase="yes" dfdl:initiator="srcFolder=" dfdl:occursCountKind="parsed" minOccurs="0" name="srcFolder" type="xsd:string"/>
+                                                        <xsd:element dfdl:ignoreCase="yes" dfdl:initiator="txtConfirmationNumber=" dfdl:occursCountKind="parsed" minOccurs="0" name="txtConfirmationNumber" type="xsd:string"/>
+                            <xsd:element dfdl:ignoreCase="yes" dfdl:initiator="srcFile=" dfdl:occursCountKind="parsed" minOccurs="0" name="srcFile" type="xsd:string"/>
+                            <xsd:element dfdl:ignoreCase="yes" dfdl:initiator="txtType=" dfdl:occursCountKind="parsed" minOccurs="0" name="txtType" type="xsd:string"/>
+                            <xsd:element dfdl:ignoreCase="yes" dfdl:initiator="ContentType=" dfdl:occursCountKind="parsed" minOccurs="0" name="ContentType" type="xsd:string"/>
+                            <xsd:element dfdl:ignoreCase="yes" dfdl:initiator="RequestType=" dfdl:occursCountKind="parsed" minOccurs="0" name="RequestType" type="xsd:string"/>
+                            <xsd:element dfdl:ignoreCase="yes" dfdl:initiator="RequestTransmission=" dfdl:occursCountKind="parsed" dfdl:outputNewLine="{}" minOccurs="0" name="RequestTransmission" type="xsd:string"/>
+                            <xsd:element dfdl:ignoreCase="yes" dfdl:initiator="cmdSubmit=" dfdl:occursCountKind="parsed" minOccurs="0" name="cmdSubmit" type="xsd:string"/>
+                                                    <xsd:element dfdl:ignoreCase="yes" dfdl:initiator="submit1=" dfdl:occursCountKind="parsed" minOccurs="0" name="submit1" type="xsd:string"/>
+                        </xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+                			            </xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>
